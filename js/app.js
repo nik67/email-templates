@@ -132,7 +132,7 @@ let currentState = {
   activeCategory: 'all',
   searchQuery: '',
   viewMode: 'grid', // 'grid' | 'list'
-  theme: localStorage.getItem('email_portfolio_theme') || 'dark',
+  theme: localStorage.getItem('email_portfolio_theme') || 'light',
   cardDeviceViews: {}, // id -> 'desktop' | 'mobile'
   lightbox: {
     active: false,

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,13 +32,13 @@
       </a>
 
       <div class="d-flex align-items-center gap-2">
-        <!-- Dark / Light Mode Toggle Button -->
-        <button class="btn btn-outline-secondary btn-sm rounded-circle p-2" id="btn-toggle-theme" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
-          <i class="fas fa-sun" id="theme-icon"></i>
+        <!-- Dark / Light Mode Circular Toggle Button -->
+        <button class="btn-theme-circle" id="btn-toggle-theme" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
         </button>
 
         <!-- GitHub Repo Button -->
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm rounded-pill px-3 fw-semibold d-inline-flex align-items-center gap-2">
+        <a href="https://github.com/nik67" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm rounded-pill px-3 fw-semibold d-inline-flex align-items-center gap-2">
           <i class="fab fa-github fs-6"></i>
           <span class="d-none d-sm-inline">GitHub Repo</span>
         </a>
@@ -50,7 +50,7 @@
   <header class="hero-section text-center">
     <div class="container container-xl">
       <div class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-2 fw-bold mb-3 d-inline-flex align-items-center gap-2">
-        <i class="fas fa-check-circle"></i> HTML Email Engineering & Responsive Design
+        <i class="fas fa-check-circle"></i> HTML Email Developer & Responsive Design
       </div>
       <h1 class="hero-title display-4 fw-extrabold mb-3">HTML Email Showcase Gallery</h1>
       <p class="hero-subtitle mb-4">
@@ -70,6 +70,194 @@
 
   <!-- Main Showcase Section -->
   <main class="container container-xl py-4">
+
+    <!-- About This Portfolio Section -->
+    <div class="about-card">
+      <div class="row g-4 align-items-center">
+        
+        <div class="col-12 col-lg-7">
+          <div class="about-title">
+            <i class="fas fa-user-check me-1"></i> About This Portfolio
+          </div>
+          <h2 class="about-author mb-2">Nikhil Sahni</h2>
+          <div class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 fw-bold mb-3">
+            Senior HTML Email Developer
+          </div>
+          
+          <p class="about-bio-text mb-3">
+            I'm <strong>Nikhil Sahni</strong>, a Senior HTML Email Developer with <strong>6.5+ years of experience</strong> delivering <strong>300+ cross-platform email campaigns</strong> for healthcare and gaming clients.
+          </p>
+          <p class="about-bio-text mb-4">
+            This gallery showcases a selection of responsive HTML email templates I've designed and coded for various industries. Each template reflects my commitment to clean code, pixel-perfect design, and high conversion rates.
+          </p>
+
+          <div class="row g-2 mb-3">
+            <div class="col-12 col-sm-6">
+              <div class="checklist-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Mobile-first and responsive</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="checklist-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Cross-client compatible (Gmail, Outlook, Apple Mail, etc.)</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="checklist-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Tested on Litmus and Email on Acid</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="checklist-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Built with HTML5, CSS3, and MJML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills & Platform Stack -->
+          <div class="pt-3 border-top border-secondary border-opacity-25">
+            <div class="row g-3">
+              <div class="col-12 col-md-7">
+                <div class="text-muted small fw-bold text-uppercase mb-2" style="letter-spacing:0.05em;">
+                  <i class="fas fa-code text-primary me-1"></i> Email Development
+                </div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fab fa-html5 text-danger me-1"></i> HTML5</span>
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fab fa-css3-alt text-primary me-1"></i> CSS3</span>
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fab fa-js text-warning me-1"></i> JavaScript (ES6+)</span>
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fas fa-fire text-danger me-1"></i> MJML</span>
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fas fa-code text-info me-1"></i> Handlebars.js</span>
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fas fa-vial text-success me-1"></i> Litmus</span>
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fas fa-vials text-primary me-1"></i> Email on Acid</span>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5">
+                <div class="text-muted small fw-bold text-uppercase mb-2" style="letter-spacing:0.05em;">
+                  <i class="fas fa-cloud text-primary me-1"></i> Platforms
+                </div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fab fa-salesforce text-info me-1"></i> Salesforce Marketing Cloud</span>
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fas fa-database text-success me-1"></i> Veeva Vault</span>
+                  <span class="card-tag-pill fw-semibold text-body"><i class="fas fa-cubes text-warning me-1"></i> Sitecore CMS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <div class="row g-3 mb-3">
+            <div class="col-6">
+              <div class="stat-badge-box">
+                <div class="stat-number">6.5+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-badge-box">
+                <div class="stat-number">300+</div>
+                <div class="stat-label">Campaigns Delivered</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-badge-box">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Litmus Tested</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-badge-box">
+                <div class="stat-number">Healthcare</div>
+                <div class="stat-label">& Gaming Focus</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Official Certification Badge -->
+          <div class="p-3 bg-body-tertiary border rounded-4 text-center">
+            <div class="text-muted small fw-bold text-uppercase mb-2" style="letter-spacing:0.05em;">
+              <i class="fas fa-certificate text-primary me-1"></i> Verified Certification
+            </div>
+            <!-- Begin: HubSpot Academy - Email Marketing Certified Badge -->
+            <div class='academy-badge'>
+              <a href='https://app-na2.hubspot.com/academy/achievements/v1nlcry1/en/1/nikhil-sahni/email-marketing-certified' target='_blank' rel='noopener noreferrer' title='HubSpot Email Marketing Certified - Nikhil Sahni'>
+                <img src='https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/f7ffeeb711104c83aa98e27d32b62dea.png' alt='HubSpot Academy - Email Marketing Certified Badge' />
+              </a>
+            </div>
+            <!-- End: HubSpot Academy - Email Marketing Certified Badge -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tech Stack Section Card -->
+    <div class="about-card py-4 mb-4">
+      <div class="d-flex align-items-center gap-2 mb-3">
+        <span class="fs-4">🛠️</span>
+        <h3 class="fw-bold mb-0">TECH STACK</h3>
+      </div>
+      <div class="row g-4">
+        
+        <!-- Email Development Stack -->
+        <div class="col-12 col-md-6">
+          <div class="p-3 bg-body-tertiary border rounded-4 h-100">
+            <h5 class="fw-bold text-primary mb-3">
+              <i class="fas fa-code me-2"></i>Email Development
+            </h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-3 py-2 fs-6">
+                <i class="fab fa-html5 me-1"></i> HTML5
+              </span>
+              <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-2 fs-6">
+                <i class="fab fa-css3-alt me-1"></i> CSS3
+              </span>
+              <span class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25 px-3 py-2 fs-6">
+                <i class="fab fa-js me-1"></i> JavaScript (ES6+)
+              </span>
+              <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-3 py-2 fs-6">
+                <i class="fas fa-fire me-1"></i> MJML
+              </span>
+              <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 px-3 py-2 fs-6">
+                <i class="fas fa-code me-1"></i> Handlebars.js
+              </span>
+              <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 fs-6">
+                <i class="fas fa-vial me-1"></i> Litmus
+              </span>
+              <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-2 fs-6">
+                <i class="fas fa-vials me-1"></i> Email on Acid
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platforms Stack -->
+        <div class="col-12 col-md-6">
+          <div class="p-3 bg-body-tertiary border rounded-4 h-100">
+            <h5 class="fw-bold text-primary mb-3">
+              <i class="fas fa-cloud me-2"></i>Platforms & CMS
+            </h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 px-3 py-2 fs-6">
+                <i class="fab fa-salesforce me-1"></i> Salesforce Marketing Cloud
+              </span>
+              <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 fs-6">
+                <i class="fas fa-database me-1"></i> Veeva Vault
+              </span>
+              <span class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25 px-3 py-2 fs-6">
+                <i class="fas fa-cubes me-1"></i> Sitecore CMS
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
     
     <!-- Filter & Search Toolbar -->
     <div class="filter-toolbar">
@@ -134,6 +322,50 @@
     <!-- Gallery Container (Populated dynamically by app.js) -->
     <div class="gallery-grid" id="gallery-container">
       <!-- Dynamic Project Cards rendered here -->
+    </div>
+
+    <!-- Contact & Get In Touch Section -->
+    <div class="contact-card mt-5">
+      <div class="row g-4 align-items-center justify-content-between">
+        <div class="col-12 col-lg-6">
+          <div class="about-title mb-2">
+            <i class="fas fa-paper-plane me-1"></i> Get In Touch
+          </div>
+          <h3 class="fw-bold mb-2">Let's Build Impactful Email Campaigns Together</h3>
+          <p class="text-secondary mb-0">
+            Have a project in mind or want to collaborate on high-converting, cross-client HTML emails? Feel free to reach out directly!
+          </p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-lg-end">
+            
+            <a href="mailto:nikhilsahni240@gmail.com" class="contact-badge-btn">
+              <i class="fas fa-envelope fs-5 text-danger"></i>
+              <div>
+                <div class="contact-btn-label">Email Me</div>
+                <div class="contact-btn-val">nikhilsahni240@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/nikhilsahni555" target="_blank" rel="noopener noreferrer" class="contact-badge-btn">
+              <i class="fab fa-linkedin fs-5 text-primary"></i>
+              <div>
+                <div class="contact-btn-label">LinkedIn</div>
+                <div class="contact-btn-val">nikhilsahni555</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/nik67" target="_blank" rel="noopener noreferrer" class="contact-badge-btn">
+              <i class="fab fa-github fs-5 text-light"></i>
+              <div>
+                <div class="contact-btn-label">GitHub</div>
+                <div class="contact-btn-val">nik67</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
     </div>
 
   </main>
@@ -208,19 +440,18 @@
     <div class="container container-xl text-center">
       <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
         <i class="fas fa-envelope-open-text text-primary fs-4"></i>
-        <span class="fw-bold fs-5">HTML Email Templates Gallery</span>
+        <span class="fw-bold fs-5">Nikhil Sahni - Senior HTML Email Developer</span>
       </div>
       <p class="text-secondary small mb-3">
-        Designed for high performance across major email clients including Outlook, Gmail, Apple Mail, and mobile devices.
+        Engineered for high performance across Outlook, Gmail, Apple Mail, and mobile devices.
       </p>
-      <div class="d-flex justify-content-center gap-3 fs-5 mb-4 text-secondary">
-        <a href="https://github.com" target="_blank" class="text-secondary text-decoration-none" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="#" class="text-secondary text-decoration-none" title="Bootstrap"><i class="fab fa-bootstrap"></i></a>
-        <a href="#" class="text-secondary text-decoration-none" title="HTML5"><i class="fab fa-html5"></i></a>
-        <a href="#" class="text-secondary text-decoration-none" title="CSS3"><i class="fab fa-css3-alt"></i></a>
+      <div class="d-flex justify-content-center gap-4 fs-5 mb-4 text-secondary">
+        <a href="mailto:nikhilsahni240@gmail.com" class="text-secondary text-decoration-none" title="Email Me"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/nikhilsahni555" target="_blank" rel="noopener noreferrer" class="text-secondary text-decoration-none" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/nik67" target="_blank" rel="noopener noreferrer" class="text-secondary text-decoration-none" title="GitHub"><i class="fab fa-github"></i></a>
       </div>
       <div class="border-top border-secondary border-opacity-25 pt-3">
-        <p class="text-muted small mb-0">&copy; 2026 HTML Email Showcase. Ready for GitHub Pages deployment.</p>
+        <p class="text-muted small mb-0">&copy; 2026 Nikhil Sahni. All rights reserved.</p>
       </div>
     </div>
   </footer>
