@@ -132,7 +132,7 @@ let currentState = {
   activeCategory: 'all',
   searchQuery: '',
   viewMode: 'grid', // 'grid' | 'list'
-  theme: localStorage.getItem('email_portfolio_theme') || 'light',
+  theme: 'light', // Light mode active first by default
   cardDeviceViews: {}, // id -> 'desktop' | 'mobile'
   lightbox: {
     active: false,
@@ -162,14 +162,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Theme Initialization & Switcher
 function initTheme() {
-  document.documentElement.setAttribute('data-bs-theme', currentState.theme);
+  currentState.theme = 'light';
+  document.documentElement.setAttribute('data-bs-theme', 'light');
   updateThemeIcon();
 }
 
 function toggleTheme() {
-  currentState.theme = currentState.theme === 'dark' ? 'light' : 'dark';
+  currentState.theme = currentState.theme === 'light' ? 'dark' : 'light';
   document.documentElement.setAttribute('data-bs-theme', currentState.theme);
-  localStorage.setItem('email_portfolio_theme', currentState.theme);
   updateThemeIcon();
 }
 
