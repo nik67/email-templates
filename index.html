@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Email Templates Showcase Portfolio</title>
+  <meta name="description" content="A professional showcase of responsive, cross-client HTML email templates built for pharmaceutical, medical, promotional, and educational campaigns.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  
+  <!-- Bootstrap 5.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-2 py-lg-3">
+    <div class="container-fluid container-xl">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-decoration-none" href="#">
+        <i class="fas fa-envelope-open-text text-primary fs-4"></i>
+        <span>EmailCraft</span>
+        <span class="brand-badge ms-1">Portfolio</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2">
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="btn btn-outline-secondary btn-sm rounded-circle p-2" id="btn-toggle-theme" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+          <i class="fas fa-sun" id="theme-icon"></i>
+        </button>
+
+        <!-- GitHub Repo Button -->
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm rounded-pill px-3 fw-semibold d-inline-flex align-items-center gap-2">
+          <i class="fab fa-github fs-6"></i>
+          <span class="d-none d-sm-inline">GitHub Repo</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center">
+    <div class="container container-xl">
+      <div class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-2 fw-bold mb-3 d-inline-flex align-items-center gap-2">
+        <i class="fas fa-check-circle"></i> HTML Email Engineering & Responsive Design
+      </div>
+      <h1 class="hero-title display-4 fw-extrabold mb-3">HTML Email Showcase Gallery</h1>
+      <p class="hero-subtitle mb-4">
+        Explore a curated collection of high-converting, cross-client responsive HTML email templates engineered for medical, pharmaceutical, marketing, and corporate campaigns.
+      </p>
+
+      <!-- Skill / Spec Badges -->
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Mobile Responsive</span>
+        <span class="tech-tag"><i class="fas fa-table"></i> Table Architecture</span>
+        <span class="tech-tag"><i class="fab fa-windows"></i> Outlook Compatible</span>
+        <span class="tech-tag"><i class="fas fa-fire"></i> MJML & Fluid Hybrid</span>
+        <span class="tech-tag"><i class="fas fa-vial"></i> Litmus & Email on Acid Tested</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Showcase Section -->
+  <main class="container container-xl py-4">
+    
+    <!-- Filter & Search Toolbar -->
+    <div class="filter-toolbar">
+      <div class="row g-3 align-items-center justify-content-between">
+        
+        <!-- Category Filter Tabs -->
+        <div class="col-12 col-lg-auto">
+          <ul class="nav nav-pills nav-pills-custom flex-nowrap overflow-x-auto pb-2 pb-lg-0" id="filter-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link nav-filter active" data-category="all">
+                <i class="fas fa-border-all me-1"></i> All Projects
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link nav-filter" data-category="pharma">
+                <i class="fas fa-prescription-bottle-alt me-1"></i> Medical & Pharma
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link nav-filter" data-category="promotional">
+                <i class="fas fa-bullhorn me-1"></i> Promotional
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link nav-filter" data-category="events">
+                <i class="fas fa-video me-1"></i> Events & Videos
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link nav-filter" data-category="wellness">
+                <i class="fas fa-heartbeat me-1"></i> Wellness
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link nav-filter" data-category="education">
+                <i class="fas fa-graduation-cap me-1"></i> Resources
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Search Bar & Grid/List Controls -->
+        <div class="col-12 col-lg-auto d-flex align-items-center gap-2">
+          <div class="search-input-wrapper flex-grow-1">
+            <i class="fas fa-search"></i>
+            <input type="text" class="form-control search-input" id="search-input" placeholder="Search email templates..." aria-label="Search">
+          </div>
+
+          <div class="d-flex align-items-center gap-1 bg-body-tertiary p-1 rounded-pill border">
+            <button class="btn btn-view-mode active" id="btn-view-grid" title="Grid View" aria-label="Grid View">
+              <i class="fas fa-th-large"></i>
+            </button>
+            <button class="btn btn-view-mode" id="btn-view-list" title="List View" aria-label="List View">
+              <i class="fas fa-list"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Gallery Container (Populated dynamically by app.js) -->
+    <div class="gallery-grid" id="gallery-container">
+      <!-- Dynamic Project Cards rendered here -->
+    </div>
+
+  </main>
+
+  <!-- Interactive Lightbox Modal with Zoom Capabilities -->
+  <div class="lightbox-modal" id="lightbox-modal" tabindex="-1" aria-hidden="true">
+    
+    <!-- Lightbox Top Navigation & Header -->
+    <div class="lightbox-header">
+      <h2 class="lightbox-title" id="lightbox-project-title">
+        Project Preview
+      </h2>
+
+      <!-- Toolbar Controls -->
+      <div class="lightbox-controls">
+        
+        <!-- View Mode Selector: Desktop Image | Mobile Image | Live HTML -->
+        <div class="lightbox-mode-group">
+          <button class="lightbox-mode-btn active" data-mode="desktop" onclick="switchLightboxMode('desktop')" title="Desktop Screenshot">
+            <i class="fas fa-desktop me-1"></i> Desktop
+          </button>
+          <button class="lightbox-mode-btn" data-mode="mobile" onclick="switchLightboxMode('mobile')" title="Mobile Screenshot">
+            <i class="fas fa-mobile-alt me-1"></i> Mobile
+          </button>
+          <button class="lightbox-mode-btn" data-mode="iframe" onclick="switchLightboxMode('iframe')" title="Live Rendered HTML Email">
+            <i class="fas fa-code me-1"></i> Live HTML
+          </button>
+        </div>
+
+        <!-- Zoom Controls Group -->
+        <div class="d-flex gap-1" id="lightbox-zoom-group">
+          <button class="lightbox-btn" onclick="zoomIn()" title="Zoom In (+)">
+            <i class="fas fa-search-plus"></i>
+          </button>
+          <button class="lightbox-btn" onclick="zoomOut()" title="Zoom Out (-)">
+            <i class="fas fa-search-minus"></i>
+          </button>
+          <button class="lightbox-btn" onclick="resetZoom()" title="Reset 1:1 Scale">
+            <i class="fas fa-sync-alt"></i> 1:1
+          </button>
+          <button class="lightbox-btn" onclick="fitZoom()" title="Fit to Viewport">
+            <i class="fas fa-compress"></i> Fit
+          </button>
+        </div>
+
+        <!-- Close Modal Button -->
+        <button class="lightbox-btn lightbox-btn-close ms-2" onclick="closeLightbox()" title="Close (Esc)">
+          <i class="fas fa-times fs-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Lightbox Main Interactive Viewport -->
+    <div class="lightbox-viewport" id="lightbox-viewport">
+      <!-- Image / Zoom Container or Iframe injected dynamically -->
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="lightbox-nav-btn lightbox-nav-prev" onclick="navigateLightbox('prev')" title="Previous Project (Left Arrow)">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-nav-btn lightbox-nav-next" onclick="navigateLightbox('next')" title="Next Project (Right Arrow)">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Zoom Level Indicator Badge -->
+    <div class="zoom-indicator" id="zoom-indicator">100%</div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container container-xl text-center">
+      <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+        <i class="fas fa-envelope-open-text text-primary fs-4"></i>
+        <span class="fw-bold fs-5">HTML Email Templates Gallery</span>
+      </div>
+      <p class="text-secondary small mb-3">
+        Designed for high performance across major email clients including Outlook, Gmail, Apple Mail, and mobile devices.
+      </p>
+      <div class="d-flex justify-content-center gap-3 fs-5 mb-4 text-secondary">
+        <a href="https://github.com" target="_blank" class="text-secondary text-decoration-none" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-secondary text-decoration-none" title="Bootstrap"><i class="fab fa-bootstrap"></i></a>
+        <a href="#" class="text-secondary text-decoration-none" title="HTML5"><i class="fab fa-html5"></i></a>
+        <a href="#" class="text-secondary text-decoration-none" title="CSS3"><i class="fab fa-css3-alt"></i></a>
+      </div>
+      <div class="border-top border-secondary border-opacity-25 pt-3">
+        <p class="text-muted small mb-0">&copy; 2026 HTML Email Showcase. Ready for GitHub Pages deployment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  
+  <!-- Custom Application Script -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
